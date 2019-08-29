@@ -1,0 +1,17 @@
+USAGE
+======
+
+option:
+-h -- help menu
+-c -- Number of channels
+-f -- pcm format type. Value corresponds to enum values defined in snd_pcm_format_t 
+-r -- Sample rate
+-o -- output file name
+-i -- input file name
+
+Run below command on linux X86 to create wav file from raw pcm file audioIn.pcm :
+./rawtoWav -i audioIn.pcm -o audioIn.wav -c 2 -f 2 -r 48000
+ 
+parameters:  channels = 2 format = 2 (SND_PCM_FORMAT_S16_LE) and rate = 48Khz
+
+
